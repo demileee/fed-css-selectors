@@ -6,7 +6,13 @@ html {
 }
 
 h1, h2 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
 }
 
 header {
@@ -35,4 +41,17 @@ header {
 
 #item2 {
   text-align: right;
+}
+
+#advanced-selectors ol > li:not(ul) {
+  padding: 0px 20px;
+  background-color: grey;
+}
+
+#advanced-selectors ol li:nth-child(odd) {
+  background-color: green;
+}
+
+#advanced-selectors ol > li > p > a:hover {
+  text-decoration: none;
 }
